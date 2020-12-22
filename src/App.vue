@@ -4,7 +4,7 @@
     <h2>{{ subtitle }}</h2>
     <h1>{{ counter }}</h1>
     <button class="inc" @click="increment">Increase</button>
-    <button class="dec">Decrease</button>
+    <button class="dec" @click="decrement">Decrease</button>
     <button>Reset</button>
   </div>
 </template>
@@ -13,7 +13,7 @@
 import { mapGetters, mapActions } from "vuex";
 export default {
   computed: mapGetters(["title", "subtitle", "counter"]),
-  methods: mapActions(["increment"])
+  methods: mapActions(["increment", "decrement"])
 };
 </script>
 
