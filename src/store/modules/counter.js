@@ -16,6 +16,9 @@ export default {
         },
         subtitle(state) {
             return state.subtitle.toUpperCase();
+        },
+        counter(state) {
+            return state.counter;
         }
     }
 }

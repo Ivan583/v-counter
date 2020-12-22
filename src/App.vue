@@ -2,7 +2,7 @@
   <div id="app">
     <h1>{{ title }}</h1>
     <h2>{{ subtitle }}</h2>
-    <h1>Counter</h1>
+    <h1>{{ counter }}</h1>
     <button class="inc">Increase</button>
     <button class="dec">Decrease</button>
     <button>Reset</button>
@@ -12,7 +12,7 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-  computed: mapGetters(["title", "subtitle"])
+  computed: mapGetters(["title", "subtitle", "counter"])
 };
 </script>
 
