@@ -10,14 +10,10 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 export default {
   computed: mapGetters(["title", "subtitle", "counter"]),
-  methods: {
-    increment() {
-      this.$store.dispatch("increment", 1);
-    }
-  }
+  methods: mapActions(["increment"])
 };
 </script>
 
