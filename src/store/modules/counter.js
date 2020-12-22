@@ -3,8 +3,16 @@ import {
 } from "fs";
 
 export default {
-    actions: {},
-    mutations: {},
+    actions: {
+        increment(ctx, payload) {
+            ctx.commit('increment', payload);
+        }
+    },
+    mutations: {
+        increment(state, payload) {
+            state.counter += payload;
+        }
+    },
     state: {
         title: 'Vuex App',
         subtitle: 'Use our application',
