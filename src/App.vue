@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-
+    <h1>Title</h1>
+    <h2>Subtitle</h2>
+    <h1>Counter</h1>
+    <button>Increase</button>
+    <button>Decrease</button>
+    <button>Reset</button>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
