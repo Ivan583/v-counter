@@ -1,14 +1,13 @@
-import {
-    stat
-} from "fs";
-
 export default {
     actions: {
         increment(ctx, payload) {
-            ctx.commit('increment', payload = 1);
+            ctx.commit('increment', payload = 5);
         },
         decrement(ctx, payload) {
-            ctx.commit('decrement', payload = 1);
+            ctx.commit('decrement', payload = 10);
+        },
+        reset(ctx) {
+            ctx.commit('reset');
         }
     },
 
@@ -18,6 +17,9 @@ export default {
         },
         decrement(state, payload) {
             state.counter -= payload;
+        },
+        reset(state) {
+            state.counter = 0;
         }
     },
 
