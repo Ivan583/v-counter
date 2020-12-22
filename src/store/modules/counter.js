@@ -13,6 +13,9 @@ export default {
     getters: {
         title(state) {
             return state.title;
+        },
+        subtitle(state) {
+            return state.subtitle.toUpperCase();
         }
     }
 }
