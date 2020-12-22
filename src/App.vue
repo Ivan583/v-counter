@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Title</h1>
+    <h1>{{ title }}</h1>
     <h2>Subtitle</h2>
     <h1>Counter</h1>
     <button class="inc">Increase</button>
@@ -10,7 +10,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    title() {
+      return this.$store.getters.title;
+    }
+  }
+};
 </script>
 
 <style>

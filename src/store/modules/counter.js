@@ -1,3 +1,7 @@
+import {
+    stat
+} from "fs";
+
 export default {
     actions: {},
     mutations: {},
@@ -6,5 +10,9 @@ export default {
         subtitle: 'Use our application',
         counter: 0
     },
-    getters: {}
+    getters: {
+        title(state) {
+            return state.title;
+        }
+    }
 }
